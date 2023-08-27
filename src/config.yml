@@ -1,0 +1,6 @@
+no-permission: "&8(&4&l!&8) &6Unknown Command."
+command-list: "&8[&4Staff Chat&8] &c/sc <message> &7| &c/sct &7| &c/screload"
+chat-message: "&8[&4Staff Chat&8] &f&l%NAME%&8: &e%MESSAGE%"
+toggle-enable: "&8[&4Staff Chat&8] &aToggle Enabled."
+toggle-disable: "&8[&4Staff Chat&8] &cToggle Disabled."
+reload-config: "&8[&4Staff Chat&8] &cConfig Reloaded."

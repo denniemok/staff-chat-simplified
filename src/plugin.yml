@@ -1,0 +1,19 @@
+name: StaffChat
+main: com.battleasya.StaffChat
+version: 1.0.0
+author: Dennie
+website: http://battleasya.com
+description: A simple staff chat system.
+commands:
+  sc:
+    description: Send a message.
+  sct:
+    description: Toggle on or off.
+  screload:
+    description: Reload config.
+permissions:
+  staffchat.*:
+    default: op
+    children:
+      staffchat.use: true
+      staffchat.reload: true

@@ -1,16 +1,16 @@
 package com.battleasya.Cmd;
 
+import com.battleasya.Hdlr.Util;
 import com.battleasya.StaffChat;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
-public class screload implements CommandExecutor {
+public class Reload implements CommandExecutor {
 
     private final StaffChat plugin;
 
-    public screload(StaffChat plugin) {
+    public Reload(StaffChat plugin) {
         this.plugin = plugin;
     }
 
@@ -18,18 +18,21 @@ public class screload implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
 
         if(!sender.hasPermission("staffchat.reload")) {
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.noPermission));
+            Util.msgSender(sender, plugin.config.noPermission);
             return true;
         }
 
         if (args.length == 0) {
+
             plugin.reloadConfig();
             plugin.config.fetchConfig();
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.reloadConfig));
+
+            Util.msgSender(sender, plugin.config.reloadConfig);
             return true;
+
         }
 
-        sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.commandList));
+        Util.msgSender(sender, plugin.config.commandSyntax);
         return true;
 
     }

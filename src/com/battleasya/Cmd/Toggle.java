@@ -1,17 +1,17 @@
 package com.battleasya.Cmd;
 
+import com.battleasya.Hdlr.Util;
 import com.battleasya.StaffChat;
-import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class sc implements CommandExecutor {
+public class Toggle implements CommandExecutor {
 
     private final StaffChat plugin;
 
-    public sc(StaffChat plugin) {
+    public Toggle(StaffChat plugin) {
         this.plugin = plugin;
     }
 
@@ -23,22 +23,22 @@ public class sc implements CommandExecutor {
         }
 
         if(!sender.hasPermission("staffchat.use")) {
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.noPermission));
+            Util.msgSender(sender, plugin.config.noPermission);
             return true;
         }
 
         if (args.length == 0) {
-            sender.sendMessage(ChatColor.translateAlternateColorCodes('&', plugin.config.commandList));
+            if (plugin.chatToggleList.containsKey(sender.getName())) {
+                plugin.chatToggleList.remove(sender.getName());
+                Util.msgSender(sender, plugin.config.toggleDisable);
+            } else {
+                plugin.chatToggleList.put(sender.getName(), 1);
+                Util.msgSender(sender, plugin.config.toggleEnable);
+            }
             return true;
         }
 
-        StringBuilder str = new StringBuilder();
-
-        for (String arg : args) {
-            str.append(arg).append(" ");
-        }
-
-        plugin.msgStaff(plugin.config.chatMessage.replaceAll("%NAME%", sender.getName()).replaceAll("%MESSAGE%", str.toString()));
+        Util.msgSender(sender, plugin.config.commandSyntax);
         return true;
 
     }

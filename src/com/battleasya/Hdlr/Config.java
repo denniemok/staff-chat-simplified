@@ -1,5 +1,6 @@
-package com.battleasya;
+package com.battleasya.Hdlr;
 
+import com.battleasya.StaffChat;
 import org.bukkit.configuration.file.FileConfiguration;
 
 public class Config {
@@ -11,7 +12,7 @@ public class Config {
     }
 
     public String noPermission;
-    public String commandList;
+    public String commandSyntax;
     public String chatMessage;
     public String toggleEnable;
     public String toggleDisable;
@@ -23,7 +24,7 @@ public class Config {
         FileConfiguration config = plugin.getConfig();
 
         noPermission = config.getString("no-permission");
-        commandList = config.getString("command-list");
+        commandSyntax = config.getString("command-syntax");
         chatMessage = config.getString("chat-message");
         toggleEnable = config.getString("toggle-enable");
         toggleDisable = config.getString("toggle-disable");

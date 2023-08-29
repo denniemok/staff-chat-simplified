@@ -1,14 +1,14 @@
 name: StaffChat
 main: com.battleasya.StaffChat
-version: 1.0.0
+version: 1.0.1
 author: Dennie
 website: http://battleasya.com
-description: A simple staff chat system.
+description: Staff Chat System
 commands:
   sc:
-    description: Send a message.
+    description: Send a message in staff chat.
   sct:
-    description: Toggle on or off.
+    description: Enable or disable staff chat mode.
   screload:
     description: Reload config.
 permissions:

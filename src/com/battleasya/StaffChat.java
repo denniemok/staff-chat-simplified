@@ -1,26 +1,24 @@
 package com.battleasya;
 
-import com.battleasya.Cmd.sc;
-import com.battleasya.Cmd.screload;
-import com.battleasya.Cmd.sct;
-import com.battleasya.Handler.ChatEvent;
-import com.battleasya.Handler.JoinEvent;
-import com.battleasya.Handler.LeaveEvent;
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.entity.Player;
+import com.battleasya.Cmd.Msg;
+import com.battleasya.Cmd.Reload;
+import com.battleasya.Cmd.Toggle;
+import com.battleasya.Hdlr.Config;
+import com.battleasya.Hdlr.Event;
+import com.battleasya.Hdlr.Util;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.HashMap;
-import java.util.Map;
 
 public class StaffChat extends JavaPlugin {
 
-    public HashMap<String, Integer> staff = new HashMap<>();
+    public HashMap<String, Integer> staffList;
 
-    public HashMap<String, Integer> chatToggle = new HashMap<>();
+    public HashMap<String, Integer> chatToggleList;
 
     public Config config;
+
+    public Util util;
 
     @Override
     public void onEnable() {
@@ -34,25 +32,21 @@ public class StaffChat extends JavaPlugin {
         /* fetch config */
         config.fetchConfig();
 
+        /* initialise util */
+        util = new Util(this);
+
+        /* initialise hashmaps */
+        staffList = new HashMap<>();
+        chatToggleList = new HashMap<>();
+
         /* register command */
-        getCommand("sc").setExecutor(new sc(this));
-        getCommand("sct").setExecutor(new sct(this));
-        getCommand("screload").setExecutor(new screload(this));
+        getCommand("sc").setExecutor(new Msg(this));
+        getCommand("sct").setExecutor(new Toggle(this));
+        getCommand("screload").setExecutor(new Reload(this));
 
         /* register listener */
-        getServer().getPluginManager().registerEvents(new ChatEvent(this), this);
-        getServer().getPluginManager().registerEvents(new JoinEvent(this), this);
-        getServer().getPluginManager().registerEvents(new LeaveEvent(this), this);
+        getServer().getPluginManager().registerEvents(new Event(this), this);
 
-    }
-
-    public void msgStaff(String msg) {
-        for (Map.Entry<String, Integer> entry : staff.entrySet()) {
-            Player player = Bukkit.getPlayer(entry.getKey());
-            if (player != null) {
-                player.sendMessage(ChatColor.translateAlternateColorCodes('&', msg));
-            }
-        }
     }
 
 }

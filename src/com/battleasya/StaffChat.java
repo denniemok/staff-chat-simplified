@@ -1,11 +1,11 @@
 package com.battleasya;
 
-import com.battleasya.Cmd.Msg;
-import com.battleasya.Cmd.Reload;
-import com.battleasya.Cmd.Toggle;
-import com.battleasya.Hdlr.Config;
-import com.battleasya.Hdlr.Event;
-import com.battleasya.Hdlr.Util;
+import com.battleasya.command.Msg;
+import com.battleasya.command.Reload;
+import com.battleasya.command.Toggle;
+import com.battleasya.handler.Config;
+import com.battleasya.handler.Event;
+import com.battleasya.handler.Util;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.HashMap;

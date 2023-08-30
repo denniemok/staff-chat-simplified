@@ -1,6 +1,6 @@
-package com.battleasya.handler;
+package com.battleasya.staffchat.handler;
 
-import com.battleasya.StaffChat;
+import com.battleasya.staffchat.StaffChat;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.CommandSender;
@@ -24,7 +24,7 @@ public class Util {
         for (Map.Entry<String, Integer> entry : plugin.staffList.entrySet()) {
             Player player = Bukkit.getPlayer(entry.getKey());
             if (player != null) {
-                Util.msgSender(player, msg);
+                msgSender(player, msg);
             }
         }
     }

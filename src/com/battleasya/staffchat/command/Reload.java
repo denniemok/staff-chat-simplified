@@ -1,7 +1,7 @@
-package com.battleasya.command;
+package com.battleasya.staffchat.command;
 
-import com.battleasya.handler.Util;
-import com.battleasya.StaffChat;
+import com.battleasya.staffchat.handler.Util;
+import com.battleasya.staffchat.StaffChat;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

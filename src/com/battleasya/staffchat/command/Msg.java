@@ -1,17 +1,17 @@
-package com.battleasya.command;
+package com.battleasya.staffchat.command;
 
-import com.battleasya.handler.Util;
-import com.battleasya.StaffChat;
+import com.battleasya.staffchat.handler.Util;
+import com.battleasya.staffchat.StaffChat;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-public class Toggle implements CommandExecutor {
+public class Msg implements CommandExecutor {
 
     private final StaffChat plugin;
 
-    public Toggle(StaffChat plugin) {
+    public Msg(StaffChat plugin) {
         this.plugin = plugin;
     }
 
@@ -28,17 +28,19 @@ public class Toggle implements CommandExecutor {
         }
 
         if (args.length == 0) {
-            if (plugin.chatToggleList.containsKey(sender.getName())) {
-                plugin.chatToggleList.remove(sender.getName());
-                Util.msgSender(sender, plugin.config.toggleDisable);
-            } else {
-                plugin.chatToggleList.put(sender.getName(), 1);
-                Util.msgSender(sender, plugin.config.toggleEnable);
-            }
+            Util.msgSender(sender, plugin.config.commandSyntax);
             return true;
         }
 
-        Util.msgSender(sender, plugin.config.commandSyntax);
+        StringBuilder str = new StringBuilder();
+
+        for (String arg : args) {
+            str.append(arg).append(" ");
+        }
+
+        plugin.util.msgStaff(plugin.config.chatMessage
+                .replaceAll("%name%", sender.getName())
+                .replaceAll("%message%", str.toString()));
         return true;
 
     }

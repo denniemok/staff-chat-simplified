@@ -1,6 +1,6 @@
 name: StaffChat
-main: com.battleasya.StaffChat
-version: 1.0.1
+main: com.battleasya.staffchat.StaffChat
+version: 1.0.2
 author: Dennie
 website: http://battleasya.com
 description: Staff Chat System

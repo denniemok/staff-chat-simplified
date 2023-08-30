@@ -1,11 +1,11 @@
-package com.battleasya;
+package com.battleasya.staffchat;
 
-import com.battleasya.command.Msg;
-import com.battleasya.command.Reload;
-import com.battleasya.command.Toggle;
-import com.battleasya.handler.Config;
-import com.battleasya.handler.Event;
-import com.battleasya.handler.Util;
+import com.battleasya.staffchat.command.Msg;
+import com.battleasya.staffchat.command.Reload;
+import com.battleasya.staffchat.command.Toggle;
+import com.battleasya.staffchat.handler.Config;
+import com.battleasya.staffchat.handler.Event;
+import com.battleasya.staffchat.handler.Util;
 import org.bukkit.plugin.java.JavaPlugin;
 
 import java.util.HashMap;

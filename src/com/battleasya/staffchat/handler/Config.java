@@ -1,6 +1,6 @@
-package com.battleasya.handler;
+package com.battleasya.staffchat.handler;
 
-import com.battleasya.StaffChat;
+import com.battleasya.staffchat.StaffChat;
 import org.bukkit.configuration.file.FileConfiguration;
 
 public class Config {

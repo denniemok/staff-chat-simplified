@@ -2,6 +2,9 @@
 
 # https://github.com/denniemok/Staff-Chat-Simplified
 
+# Support coloring messages with HEX codes on 1.16+ versions
+# e.g., "#c8a2c8%name%: #e69296%message%."
+
 chat-message: "&8[&4Staff Chat&8] &f&l%name%&8: &e%message%"
 
 toggle-enable: "&8[&4Staff Chat&8] &aChat Mode Enabled."

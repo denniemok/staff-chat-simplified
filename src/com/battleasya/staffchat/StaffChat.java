@@ -35,7 +35,7 @@ public class StaffChat extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new Event(), this);
 
         /* register bstats */
-        new Metrics(this, 19688);
+        new Metrics(this, 19691);
         getLogger().info("Starting Metrics. Opt-out using the global bStats config.");
 
         /* e.g., 1.14-R0.1-SNAPSHOT */

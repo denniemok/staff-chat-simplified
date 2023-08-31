@@ -1,9 +1,9 @@
-# StaffChat-Simplified 1.0.3
-
+# Staff-Chat-Simplified 1.0.3
+# https://www.spigotmc.org/resources/112399/
 # https://github.com/denniemok/Staff-Chat-Simplified
 
 # Support coloring messages with HEX codes on 1.16+ versions
-# e.g., "&8[#c8a2c8StaffChat&8] #ffc8a9%name%&8: #bddeec%message%"
+# e.g. "&8[#c8a2c8StaffChat&8] #ffc8a9%name%&8: #bddeec%message%"
 
 chat-message: "&8[&4Staff Chat&8] &f&l%name%&8: &e%message%"
 

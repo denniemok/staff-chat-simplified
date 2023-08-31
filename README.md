@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-    The simplest way to chat with your fellow staff easily.<br>
+    The simplest way to chat with your fellow staff.<br>
     <a href="https://github.com/denniemok/Staff-Chat-Simplified/releases">Latest Release</a> •
     <a href="https://github.com/denniemok/Staff-Chat-Simplified/wiki">User Guide</a> •
     <a href="https://github.com/denniemok/Staff-Chat-Simplified/issues">Issue Tracker</a>
@@ -17,6 +17,14 @@
 This is a lightweight plugin with exactly one function: facilitates staff communication in-game with a designated chat channel. Nothing fancy or complicated is involved. What it does is only the simplest task you ever ask for, hence the performance and size. <p>
 
 Heavily inspired by [Staff Chat](https://www.spigotmc.org/resources/staff-chat.17706/), this version, however, is much more simplified and straightforward and is developed using a minimalist approach.
+
+<hr>
+
+### Major Highlights
+- Simple and lightweight, with no other unrelated components.
+- Highly configurable with HEX colour support included.
+- Automatically translates any colour codes in staff chat.
+- Forward compatible with all 1.8+ versions.<br>
 
 <hr>
 

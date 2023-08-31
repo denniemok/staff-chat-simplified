@@ -1,5 +1,6 @@
-# Staff-Chat-Simplified 1.0.3
+# StaffChat-Simplified 1.0.3
 
+# https://github.com/denniemok/Staff-Chat-Simplified
 
 chat-message: "&8[&4Staff Chat&8] &f&l%name%&8: &e%message%"
 

@@ -1,11 +1,11 @@
 <br>
-<h3 align="center">Staff Chat</h3>
+<h3 align="center">Staff Chat Simplified</h3>
 <p align="center">A simplified staff chat plugin.</p>
 
 <p align="center">
-    <a href="https://github.com/denniemok/Staff-Chat/releases">Latest Release</a> •
-    <a href="https://github.com/denniemok/Staff-Chat/wiki">User Guide</a> •
-    <a href="https://github.com/denniemok/Staff-Chat/issues">Issue Tracker</a>
+    <a href="https://github.com/denniemok/Staff-Chat-Simplified/releases">Latest Release</a> •
+    <a href="https://github.com/denniemok/Staff-Chat-Simplified/wiki">User Guide</a> •
+    <a href="https://github.com/denniemok/Staff-Chat-Simplified/issues">Issue Tracker</a>
 </p>
 
 <p align="center">
@@ -15,7 +15,7 @@
 <hr>
 
 ### Introduction
-This is a lightweight plugin with exactly one function: staff chat. Nothing fancy or complicated is involved. What it does is only the simplest task you ever ask for, hence the performance and size. <br>
+This is a lightweight plugin with exactly one function: enable staff connection with a simple staff chat. Nothing fancy or complicated is involved. What it does is only the simplest task you ever ask for, hence the performance and size. <br>
 
 <hr>
 

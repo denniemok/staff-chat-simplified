@@ -1,7 +1,7 @@
 package com.battleasya.staffchat.command;
 
+import com.battleasya.staffchat.handler.Config;
 import com.battleasya.staffchat.handler.Util;
-import com.battleasya.staffchat.StaffChat;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -9,36 +9,31 @@ import org.bukkit.entity.Player;
 
 public class Toggle implements CommandExecutor {
 
-    private final StaffChat plugin;
-
-    public Toggle(StaffChat plugin) {
-        this.plugin = plugin;
-    }
-
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
 
         if(!(sender instanceof Player)) {
+            sender.sendMessage("This is a player-only command!");
             return true;
         }
 
         if(!sender.hasPermission("staffchat.use")) {
-            Util.msgSender(sender, plugin.config.noPermission);
+            Util.msgPlayer(sender, Config.noPermission);
             return true;
         }
 
         if (args.length == 0) {
-            if (plugin.chatToggleList.containsKey(sender.getName())) {
-                plugin.chatToggleList.remove(sender.getName());
-                Util.msgSender(sender, plugin.config.toggleDisable);
+            if (Util.chatToggleList.containsKey(sender.getName())) {
+                Util.chatToggleList.remove(sender.getName());
+                Util.msgPlayer(sender, Config.toggleDisable);
             } else {
-                plugin.chatToggleList.put(sender.getName(), 1);
-                Util.msgSender(sender, plugin.config.toggleEnable);
+                Util.chatToggleList.put(sender.getName(), 1);
+                Util.msgPlayer(sender, Config.toggleEnable);
             }
             return true;
         }
 
-        Util.msgSender(sender, plugin.config.commandSyntax);
+        Util.msgPlayer(sender, Config.toggleSyntax);
         return true;
 
     }

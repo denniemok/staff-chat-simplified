@@ -8,21 +8,15 @@ import org.bukkit.event.player.*;
 
 public class Event implements Listener {
 
-    private final StaffChat plugin;
-
-    public Event(StaffChat plugin) {
-        this.plugin = plugin;
-    }
-
     @EventHandler
     public void onChat(AsyncPlayerChatEvent event) {
 
         String playerName = event.getPlayer().getName();
 
-        if (plugin.chatToggleList.containsKey(playerName)) {
+        if (Util.chatToggleList.containsKey(playerName)) {
             String message = event.getMessage();
             event.setCancelled(true);
-            plugin.util.msgStaff(plugin.config.chatMessage
+            Util.msgStaff(Config.chatMessage
                     .replaceAll("%name%", playerName)
                     .replaceAll("%message%",  message));
         }
@@ -35,7 +29,7 @@ public class Event implements Listener {
         Player player = event.getPlayer();
 
         if (player.hasPermission("staffchat.use")) {
-            plugin.staffList.put(player.getName(), 1);
+            Util.staffList.put(player.getName(), 1);
         }
 
     }
@@ -45,8 +39,8 @@ public class Event implements Listener {
 
         String playerName = event.getPlayer().getName();
 
-        plugin.staffList.remove(playerName);
-        plugin.chatToggleList.remove(playerName);
+        Util.staffList.remove(playerName);
+        Util.chatToggleList.remove(playerName);
 
     }
 

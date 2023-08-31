@@ -1,7 +1,7 @@
 package com.battleasya.staffchat.command;
 
+import com.battleasya.staffchat.handler.Config;
 import com.battleasya.staffchat.handler.Util;
-import com.battleasya.staffchat.StaffChat;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -9,26 +9,21 @@ import org.bukkit.entity.Player;
 
 public class Msg implements CommandExecutor {
 
-    private final StaffChat plugin;
-
-    public Msg(StaffChat plugin) {
-        this.plugin = plugin;
-    }
-
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
 
         if(!(sender instanceof Player)) {
+            sender.sendMessage("This is a player-only command!");
             return true;
         }
 
         if(!sender.hasPermission("staffchat.use")) {
-            Util.msgSender(sender, plugin.config.noPermission);
+            Util.msgPlayer(sender, Config.noPermission);
             return true;
         }
 
         if (args.length == 0) {
-            Util.msgSender(sender, plugin.config.commandSyntax);
+            Util.msgPlayer(sender, Config.messageSyntax);
             return true;
         }
 
@@ -38,7 +33,7 @@ public class Msg implements CommandExecutor {
             str.append(arg).append(" ");
         }
 
-        plugin.util.msgStaff(plugin.config.chatMessage
+        Util.msgStaff(Config.chatMessage
                 .replaceAll("%name%", sender.getName())
                 .replaceAll("%message%", str.toString()));
         return true;

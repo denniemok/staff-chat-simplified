@@ -1,5 +1,6 @@
 package com.battleasya.staffchat.command;
 
+import com.battleasya.staffchat.handler.Config;
 import com.battleasya.staffchat.handler.Util;
 import com.battleasya.staffchat.StaffChat;
 import org.bukkit.command.Command;
@@ -18,7 +19,7 @@ public class Reload implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command cmd, String s, String[] args) {
 
         if(!sender.hasPermission("staffchat.reload")) {
-            Util.msgSender(sender, plugin.config.noPermission);
+            Util.msgPlayer(sender, Config.noPermission);
             return true;
         }
 
@@ -27,12 +28,12 @@ public class Reload implements CommandExecutor {
             plugin.reloadConfig();
             plugin.config.fetchConfig();
 
-            Util.msgSender(sender, plugin.config.reloadConfig);
+            Util.msgPlayer(sender, Config.reloadConfig);
             return true;
 
         }
 
-        Util.msgSender(sender, plugin.config.commandSyntax);
+        Util.msgPlayer(sender, Config.reloadSyntax);
         return true;
 
     }

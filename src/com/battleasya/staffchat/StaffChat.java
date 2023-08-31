@@ -1,24 +1,18 @@
 package com.battleasya.staffchat;
 
+import com.battleasya.staffchat.bstats.Metrics;
 import com.battleasya.staffchat.command.Msg;
 import com.battleasya.staffchat.command.Reload;
 import com.battleasya.staffchat.command.Toggle;
 import com.battleasya.staffchat.handler.Config;
 import com.battleasya.staffchat.handler.Event;
-import com.battleasya.staffchat.handler.Util;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.util.HashMap;
 
 public class StaffChat extends JavaPlugin {
 
-    public HashMap<String, Integer> staffList;
-
-    public HashMap<String, Integer> chatToggleList;
-
     public Config config;
 
-    public Util util;
+    public static int version;
 
     @Override
     public void onEnable() {
@@ -32,21 +26,29 @@ public class StaffChat extends JavaPlugin {
         /* fetch config */
         config.fetchConfig();
 
-        /* initialise util */
-        util = new Util(this);
-
-        /* initialise hashmaps */
-        staffList = new HashMap<>();
-        chatToggleList = new HashMap<>();
-
         /* register command */
-        getCommand("sc").setExecutor(new Msg(this));
-        getCommand("sct").setExecutor(new Toggle(this));
+        getCommand("sc").setExecutor(new Msg());
+        getCommand("sct").setExecutor(new Toggle());
         getCommand("screload").setExecutor(new Reload(this));
 
         /* register listener */
-        getServer().getPluginManager().registerEvents(new Event(this), this);
+        getServer().getPluginManager().registerEvents(new Event(), this);
 
+        /* register bstats */
+        new Metrics(this, 19688);
+        getLogger().info("Starting Metrics. Opt-out using the global bStats config.");
+
+        /* e.g., 1.14-R0.1-SNAPSHOT */
+        try {
+            version = Integer.parseInt(getServer().getBukkitVersion().split("-")[0].split("\\.")[1]);
+        } catch (Exception e) {
+            version = 8;
+        }
+
+    }
+
+    public static int getServerVersion() {
+        return version;
     }
 
 }

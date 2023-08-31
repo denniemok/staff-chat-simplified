@@ -1,11 +1,15 @@
-# Staff Chat
+# Staff-Chat-Simplified 1.0.3
+
 
 chat-message: "&8[&4Staff Chat&8] &f&l%name%&8: &e%message%"
 
-toggle-enable: "&8[&4Staff Chat&8] &aToggle Enabled."
-toggle-disable: "&8[&4Staff Chat&8] &cToggle Disabled."
+toggle-enable: "&8[&4Staff Chat&8] &aChat Mode Enabled."
+toggle-disable: "&8[&4Staff Chat&8] &cChat Mode Disabled."
 
 no-permission: "&8(&4&l!&8) &6Unknown Command."
-command-syntax: "&8[&4Staff Chat&8] &c/sc <message> &7| &c/sct &7| &c/screload"
+
+message-syntax: "&cSyntax: /sc <message>"
+toggle-syntax: "&cSyntax: /sct"
+reload-syntax: "&cSyntax: /screload"
 
 reload-config: "&8[&4Staff Chat&8] &cConfig Reloaded."

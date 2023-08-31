@@ -1,6 +1,6 @@
 <br>
 <h3 align="center">Staff Chat</h3>
-<p align="center">A minimalist staff chat plugin.</p>
+<p align="center">A simplified staff chat plugin.</p>
 
 <p align="center">
     <a href="https://github.com/denniemok/Staff-Chat/releases">Latest Release</a> •
@@ -9,13 +9,13 @@
 </p>
 
 <p align="center">
-    <img src="https://img.shields.io/badge/Version-1.0.2-green"> <img src="https://img.shields.io/badge/Spigot-1.8+-lightgrey"> <img src="https://img.shields.io/badge/License-MIT-blue"> <img src="https://img.shields.io/badge/Language-Java-yellow">
+    <img src="https://img.shields.io/badge/Version-1.0.3-green"> <img src="https://img.shields.io/badge/Spigot-1.8+-lightgrey"> <img src="https://img.shields.io/badge/License-MIT-blue"> <img src="https://img.shields.io/badge/Language-Java-yellow">
 </p><br>
 
 <hr>
 
 ### Introduction
-This is a minimalist plugin with exactly one function: staff chat. Nothing fancy or complicated is involved. It only does the simplest task you ask for, and hence the performance. <br>
+This is a lightweight plugin with exactly one function: staff chat. Nothing fancy or complicated is involved. What it does is only the simplest task you ever ask for, hence the performance and size. <br>
 
 <hr>
 
@@ -28,7 +28,10 @@ This is a minimalist plugin with exactly one function: staff chat. Nothing fancy
 
 ### Build Dependencies
 - Java 8
-- Spigot API 1.8.8 R0.1 <br>
+- Spigot API 1.8.8 R0.1 Shaded
+- Spigot API 1.20.1 R0.1 Shaded
+
+Spigot APIs can be obtained from [here](https://hub.spigotmc.org/nexus/content/repositories/snapshots/org/spigotmc/spigot-api/).<br>
 
 <hr>
 

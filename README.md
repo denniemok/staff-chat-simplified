@@ -1,17 +1,14 @@
 <br><br>
 <p align="center">
     <img src="https://i.imgur.com/mcjIero.png"><br>
-    A simplified staff chat plugin.
+    <img src="https://img.shields.io/badge/Version-1.0.3-green"> <img src="https://img.shields.io/badge/Spigot-1.8+-lightgrey"> <img src="https://img.shields.io/badge/License-MIT-blue"> <img src="https://img.shields.io/badge/Language-Java-yellow">
 </p>
 
 <p align="center">
+    A simplified staff chat plugin.<br>
     <a href="https://github.com/denniemok/Staff-Chat-Simplified/releases">Latest Release</a> •
     <a href="https://github.com/denniemok/Staff-Chat-Simplified/wiki">User Guide</a> •
     <a href="https://github.com/denniemok/Staff-Chat-Simplified/issues">Issue Tracker</a>
-</p>
-
-<p align="center">
-    <img src="https://img.shields.io/badge/Version-1.0.3-green"> <img src="https://img.shields.io/badge/Spigot-1.8+-lightgrey"> <img src="https://img.shields.io/badge/License-MIT-blue"> <img src="https://img.shields.io/badge/Language-Java-yellow">
 </p><br>
 
 <hr>

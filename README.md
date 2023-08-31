@@ -10,7 +10,7 @@
     <a href="https://github.com/denniemok/Staff-Chat-Simplified/releases">Latest Release</a> •
     <a href="https://github.com/denniemok/Staff-Chat-Simplified/wiki">User Guide</a> •
     <a href="https://github.com/denniemok/Staff-Chat-Simplified/issues">Issue Tracker</a>
-</p><br>
+</p> <br>
 
 <hr>
 

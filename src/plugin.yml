@@ -1,6 +1,7 @@
-name: StaffChat
+name: StaffChat-Simplified
 main: com.battleasya.staffchat.StaffChat
 version: 1.0.3
+api-version: 1.14
 author: Dennie
 website: http://battleasya.com
 description: The simplest way to chat with your fellow staff easily.

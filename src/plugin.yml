@@ -3,7 +3,7 @@ main: com.battleasya.staffchat.StaffChat
 version: 1.0.2
 author: Dennie
 website: http://battleasya.com
-description: Staff Chat System
+description: The simplest way to chat with your fellow staff easily.
 commands:
   sc:
     description: Send a message in staff chat.

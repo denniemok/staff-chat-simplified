@@ -14,7 +14,7 @@
 <hr>
 
 ### Introduction
-This is a lightweight plugin with exactly one function: enable staff connection with a simple staff chat. Nothing fancy or complicated is involved. What it does is only the simplest task you ever ask for, hence the performance and size. <p>
+This is a lightweight plugin with exactly one function: enables the in-game communication of staff with a designated chat channel. Nothing fancy or complicated is involved. What it does is only the simplest task you ever ask for, hence the performance and size. <p>
 
 Heavily inspired by [Staff Chat](https://www.spigotmc.org/resources/staff-chat.17706/), this version, however, is much more simplified and straightforward and is developed using a minimalist approach.
 

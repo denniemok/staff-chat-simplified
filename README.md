@@ -1,6 +1,8 @@
-<br>
-<h3 align="center">Staff Chat Simplified</h3>
-<p align="center">A simplified staff chat plugin.</p>
+<br><br>
+<p align="center">
+    <img src="https://i.imgur.com/mcjIero.png"><br>
+    A simplified staff chat plugin.
+</p>
 
 <p align="center">
     <a href="https://github.com/denniemok/Staff-Chat-Simplified/releases">Latest Release</a> •

@@ -1,4 +1,4 @@
-name: StaffChat-Simplified
+name: StaffChat
 main: com.battleasya.staffchat.StaffChat
 version: 1.0.3
 api-version: 1.14

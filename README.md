@@ -5,7 +5,6 @@
 </p>
 
 <p align="center">
-    The simplest way to chat with your fellow staff.<br>
     <a href="https://www.spigotmc.org/resources/112399/">Spigot Page</a> •
     <a href="https://github.com/denniemok/staff-chat-simplified/releases">Latest Release</a> •
     <a href="https://github.com/denniemok/staff-chat-simplified/wiki">User Guide</a> •

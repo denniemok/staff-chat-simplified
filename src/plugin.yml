@@ -4,7 +4,7 @@ version: 1.0.3
 api-version: 1.14
 author: Dennie
 website: http://battleasya.com
-description: The simplest way to chat with your fellow staff.
+description: Enables staff communication in-game with a designated chat channel.
 commands:
   sc:
     description: Send a message to staff chat.

@@ -19,7 +19,7 @@ This is a lightweight plugin with exactly one function: facilitates staff commun
 
 Heavily inspired by [Staff Chat](https://www.spigotmc.org/resources/staff-chat.17706/), this version, however, is much more simplified and straightforward and is developed using a minimalist approach. <p>
 
-Originally being part of [BattleAsya Utility](https://github.com/denniemok/battleasya-utility), now made separated and configurable.
+Originally being part of [BattleAsya Utility](https://github.com/denniemok/battleasya-utility), now made available separately with configurability.
 
 <hr>
 
@@ -27,14 +27,14 @@ Originally being part of [BattleAsya Utility](https://github.com/denniemok/battl
 - Simple and lightweight, with no other unrelated components.
 - Highly configurable with HEX colour support included.
 - Automatically translates any colour codes in staff chat.
-- Forward compatible with all 1.8+ versions.<br>
+- Forward compatible with all 1.8+ versions.
 
 <hr>
 
 ### Runtime Requirements
 - Java 8 or above
 - Spigot 1.8 or above, or equivalent forks
-- Permission plugin, preferably LuckPerms or PermissionsEx <br>
+- Permission plugin, preferably LuckPerms or PermissionsEx 
 
 <hr>
 
@@ -42,7 +42,7 @@ Originally being part of [BattleAsya Utility](https://github.com/denniemok/battl
 - Java 8
 - Spigot-API 1.20.1 R0.1 Shaded
 
-Spigot APIs can be obtained from [here](https://hub.spigotmc.org/nexus/content/repositories/snapshots/org/spigotmc/spigot-api/).<br>
+Spigot APIs can be obtained from [here](https://hub.spigotmc.org/nexus/content/repositories/snapshots/org/spigotmc/spigot-api/).
 
 <hr>
 

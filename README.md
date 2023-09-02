@@ -19,7 +19,7 @@ This is a lightweight plugin with exactly one function: facilitates staff commun
 
 Heavily inspired by [Staff Chat](https://www.spigotmc.org/resources/staff-chat.17706/), this version, however, is much more simplified and straightforward and is developed using a minimalist approach. <p>
 
-Originally being part of [BattleAsya Utility](https://github.com/denniemok/battleasya-utility), now made available separately with configurability.
+Originally being part of [BattleAsya Utility](https://github.com/denniemok/battleasya-utility), now made available separately with enhanced configurability.
 
 <hr>
 

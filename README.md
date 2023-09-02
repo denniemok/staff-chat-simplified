@@ -17,7 +17,9 @@
 ### Introduction
 This is a lightweight plugin with exactly one function: facilitates staff communication in-game with a designated chat channel. Nothing fancy or complicated is involved. What it does is only the simplest task you ever ask for, hence the performance and size. <p>
 
-Heavily inspired by [Staff Chat](https://www.spigotmc.org/resources/staff-chat.17706/), this version, however, is much more simplified and straightforward and is developed using a minimalist approach.
+Heavily inspired by [Staff Chat](https://www.spigotmc.org/resources/staff-chat.17706/), this version, however, is much more simplified and straightforward and is developed using a minimalist approach. <p>
+
+Originally being part of [BattleAsya Utility](https://github.com/denniemok/battleasya-utility), now made separated and configurable.
 
 <hr>
 

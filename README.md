@@ -40,8 +40,7 @@ Originally being part of [BattleAsya Utility](https://github.com/denniemok/battl
 
 ### Build Dependencies
 - Java 8
-- Spigot API 1.8.8 R0.1 Shaded
-- Spigot API 1.20.1 R0.1 Shaded
+- Spigot-API 1.20.1 R0.1 Shaded
 
 Spigot APIs can be obtained from [here](https://hub.spigotmc.org/nexus/content/repositories/snapshots/org/spigotmc/spigot-api/).<br>
 

@@ -1,7 +1,7 @@
 <br><br>
 <p align="center">
     <img src="https://i.imgur.com/mcjIero.png"><br>
-    <img src="https://img.shields.io/badge/Version-1.0.4-green"> <img src="https://img.shields.io/badge/Spigot-1.8+-lightgrey"> <img src="https://img.shields.io/badge/License-MIT-blue"> <img src="https://img.shields.io/badge/Language-Java-yellow">
+    <img src="https://img.shields.io/badge/Version-1.0.5-green"> <img src="https://img.shields.io/badge/Spigot-1.8+-lightgrey"> <img src="https://img.shields.io/badge/License-MIT-blue"> <img src="https://img.shields.io/badge/Language-Java-yellow">
 </p>
 
 <p align="center">
@@ -24,8 +24,8 @@ Originally being part of [BattleAsya Utility](https://github.com/denniemok/battl
 <hr>
 
 ### Major Highlights
-- Simple and lightweight, with no other unrelated components.
-- Highly configurable with HEX colour support included.
+- Simple and lightweight, with no unrelated components.
+- Highly configurable with HEX colour and PAPI support included.
 - Automatically translates any colour codes in staff chat.
 - Forward compatible with all 1.8+ versions.
 
@@ -34,13 +34,15 @@ Originally being part of [BattleAsya Utility](https://github.com/denniemok/battl
 ### Runtime Requirements
 - Java 8 or above
 - Spigot 1.8 or above, or equivalent forks
-- Permission plugin, preferably LuckPerms or PermissionsEx 
+- Permission plugin (Optional)
+- PlaceholderAPI (Optional)
 
 <hr>
 
 ### Build Dependencies
 - Java 8
-- Spigot-API 1.20.1 R0.1 Shaded
+- Spigot-API 1.20.1 R0.1
+- PlaceholderAPI 1.11.3
 
 Spigot APIs can be obtained from [here](https://hub.spigotmc.org/nexus/content/repositories/snapshots/org/spigotmc/spigot-api/).
 

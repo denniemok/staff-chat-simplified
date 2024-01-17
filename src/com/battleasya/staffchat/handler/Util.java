@@ -6,16 +6,16 @@ import net.md_5.bungee.api.ChatColor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public class Util {
 
-    public static HashMap<String, Integer> staffList = new HashMap<>();
+    public static HashSet<String> staffList = new HashSet<>();
 
-    public static HashMap<String, Integer> chatToggleList = new HashMap<>();
+    public static HashSet<String> chatToggleList = new HashSet<>();
 
     public static void msgPlayer(CommandSender sender, String message) {
         sender.sendMessage(translate(message));
@@ -42,8 +42,7 @@ public class Util {
     }
 
     public static void msgStaff(String msg) {
-        for (Map.Entry<String, Integer> entry : staffList.entrySet()) {
-            String staffName = entry.getKey();
+        for (String staffName : staffList) {
             Player staff = Bukkit.getPlayer(staffName);
             if (staff != null) {
                 msgPlayer(staff, msg);

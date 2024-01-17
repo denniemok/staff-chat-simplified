@@ -12,7 +12,7 @@ public class Event implements Listener {
 
         String playerName = event.getPlayer().getName();
 
-        if (Util.chatToggleList.containsKey(playerName)) {
+        if (Util.chatToggleList.contains(playerName)) {
             String message = event.getMessage();
             event.setCancelled(true);
             Util.msgStaff(Config.chatMessage
@@ -28,7 +28,7 @@ public class Event implements Listener {
         Player player = event.getPlayer();
 
         if (player.hasPermission("staffchat.use")) {
-            Util.staffList.put(player.getName(), 1);
+            Util.staffList.add(player.getName());
         }
 
     }

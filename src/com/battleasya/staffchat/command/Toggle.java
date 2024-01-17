@@ -23,14 +23,21 @@ public class Toggle implements CommandExecutor {
         }
 
         if (args.length == 0) {
-            if (Util.chatToggleList.containsKey(sender.getName())) {
+            if (Util.chatToggleList.contains(sender.getName())) {
                 Util.chatToggleList.remove(sender.getName());
                 Util.msgPlayer(sender, Config.toggleDisable);
             } else {
-                Util.chatToggleList.put(sender.getName(), 1);
+                Util.chatToggleList.add(sender.getName());
                 Util.msgPlayer(sender, Config.toggleEnable);
             }
             return true;
+        } else if (args.length == 1) {
+            switch (args[0].toLowerCase()) {
+                case "on":
+                    return true;
+                case "off":
+                    return true;
+            }
         }
 
         Util.msgPlayer(sender, Config.toggleSyntax);

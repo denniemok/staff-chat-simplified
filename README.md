@@ -44,8 +44,6 @@ Originally being part of [BattleAsya Utility](https://github.com/denniemok/battl
 - Spigot-API 1.20.1 R0.1
 - PlaceholderAPI 1.11.3
 
-Spigot APIs can be obtained from [here](https://hub.spigotmc.org/nexus/content/repositories/snapshots/org/spigotmc/spigot-api/).
-
 <hr>
 
 This project is released under the [MIT License](https://opensource.org/license/mit/).

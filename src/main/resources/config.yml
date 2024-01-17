@@ -1,10 +1,14 @@
-# StaffChat (Simplified) 1.0.4
+# StaffChat-Simplified ${version}
 # https://www.spigotmc.org/resources/112399/
 # https://github.com/denniemok/staff-chat-simplified
 
+# HEX Colour Support
 # This plugin supports HEX codes on 1.16+ servers.
 # Example: "&8[#c8a2c8StaffChat&8] #ffc8a9%name%&8: #bddeec%message%"
 
+# The chat-message option supports all available placeholders from PAPI.
+# https://github.com/PlaceholderAPI/PlaceholderAPI/wiki/Placeholders
+# Example: "&8[&4Staff Chat&8] &f&l[%vault_prefix%] %essentials_nickname%&8: &e%message%"
 chat-message: "&8[&4Staff Chat&8] &f&l%name%&8: &e%message%"
 
 toggle-enable: "&8[&4Staff Chat&8] &aChat Mode Enabled."
@@ -13,7 +17,7 @@ toggle-disable: "&8[&4Staff Chat&8] &cChat Mode Disabled."
 no-permission: "&8(&4&l!&8) &6Unknown Command."
 
 message-syntax: "&cSyntax: /sc <message>"
-toggle-syntax: "&cSyntax: /sct"
+toggle-syntax: "&cSyntax: /sct [on|off]"
 reload-syntax: "&cSyntax: /screload"
 
 reload-config: "&8[&4Staff Chat&8] &cConfig Reloaded."

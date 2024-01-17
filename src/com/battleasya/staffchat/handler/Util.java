@@ -7,7 +7,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 import java.util.HashSet;
-import java.util.Map;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -15,7 +14,7 @@ public class Util {
 
     public static HashSet<String> staffList = new HashSet<>();
 
-    public static HashSet<String> chatToggleList = new HashSet<>();
+    public static HashSet<String> chatEnabledList = new HashSet<>();
 
     public static void msgPlayer(CommandSender sender, String message) {
         sender.sendMessage(translate(message));
@@ -48,7 +47,7 @@ public class Util {
                 msgPlayer(staff, msg);
             } else {
                 Util.staffList.remove(staffName);
-                Util.chatToggleList.remove(staffName);
+                Util.chatEnabledList.remove(staffName);
             }
         }
     }

@@ -12,7 +12,7 @@ public class Event implements Listener {
 
         String playerName = event.getPlayer().getName();
 
-        if (Util.chatToggleList.contains(playerName)) {
+        if (Util.chatEnabledList.contains(playerName)) {
             String message = event.getMessage();
             event.setCancelled(true);
             Util.msgStaff(Config.chatMessage
@@ -39,7 +39,7 @@ public class Event implements Listener {
         String playerName = event.getPlayer().getName();
 
         Util.staffList.remove(playerName);
-        Util.chatToggleList.remove(playerName);
+        Util.chatEnabledList.remove(playerName);
 
     }
 

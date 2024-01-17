@@ -26,7 +26,7 @@ public class Reload implements CommandExecutor {
         if (args.length == 0) {
 
             plugin.reloadConfig();
-            plugin.config.fetchConfig();
+            plugin.getConfiguration().fetchConfig();
 
             Util.msgPlayer(sender, Config.reloadConfig);
             return true;

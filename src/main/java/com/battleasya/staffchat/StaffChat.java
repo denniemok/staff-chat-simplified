@@ -14,7 +14,7 @@ public class StaffChat extends JavaPlugin {
 
     public static int version;
 
-    public static boolean PAPI;
+    public static boolean papi;
 
     @Override
     public void onEnable() {
@@ -26,7 +26,7 @@ public class StaffChat extends JavaPlugin {
         config = new Config(this);
 
         /* fetch config */
-        config.fetchConfig();
+        getConfiguration().fetchConfig();
 
         /* register command */
         getCommand("sc").setExecutor(new Msg());
@@ -48,8 +48,12 @@ public class StaffChat extends JavaPlugin {
         }
 
         /* hook into PAPI */
-        PAPI = getServer().getPluginManager().getPlugin("PlaceholderAPI") != null;
+        papi = getServer().getPluginManager().getPlugin("PlaceholderAPI") != null;
 
+    }
+
+    public Config getConfiguration() {
+        return config;
     }
 
     public static int getServerVersion() {
@@ -57,7 +61,7 @@ public class StaffChat extends JavaPlugin {
     }
 
     public static boolean getPAPIStatus() {
-        return PAPI;
+        return papi;
     }
 
 }

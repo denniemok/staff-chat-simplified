@@ -24,9 +24,9 @@ Originally being part of [BattleAsya Utility](https://github.com/denniemok/battl
 <hr>
 
 ### Major Highlights
-- Simple and lightweight, with no unrelated components.
-- Highly configurable with HEX colour and PAPI support included.
-- Automatically translates any colour codes in staff chat.
+- Simple, lightweight and highly configurable.
+- Built-in support for HEX colour and PlaceholderAPI.
+- Automatic colour code conversions in chat.
 - Forward compatible with all 1.8+ versions.
 
 <hr>

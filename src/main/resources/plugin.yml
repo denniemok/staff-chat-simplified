@@ -1,6 +1,6 @@
 name: StaffChat
 main: com.battleasya.staffchat.StaffChat
-version: 1.0.4
+version: ${version}
 api-version: 1.14
 author: Dennie
 website: http://battleasya.com

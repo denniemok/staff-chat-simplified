@@ -20,6 +20,20 @@ public class Util {
         sender.sendMessage(translate(message));
     }
 
+    public static void msgStaff(String message) {
+
+        for (String staffName : staffList) {
+            Player staff = Bukkit.getPlayer(staffName);
+            if (staff != null) {
+                msgPlayer(staff, message);
+            } else {
+                Util.staffList.remove(staffName);
+                Util.chatEnabledList.remove(staffName);
+            }
+        }
+
+    }
+
     public static String translate(String message) {
 
         /* HEX code support starts at 1.16 */
@@ -38,18 +52,6 @@ public class Util {
 
         return ChatColor.translateAlternateColorCodes('&', message);
 
-    }
-
-    public static void msgStaff(String message) {
-        for (String staffName : staffList) {
-            Player staff = Bukkit.getPlayer(staffName);
-            if (staff != null) {
-                msgPlayer(staff, message);
-            } else {
-                Util.staffList.remove(staffName);
-                Util.chatEnabledList.remove(staffName);
-            }
-        }
     }
 
 }

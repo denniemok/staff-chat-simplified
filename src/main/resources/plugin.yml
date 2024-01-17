@@ -8,9 +8,9 @@ description: Enables staff communication in-game with a designated chat channel.
 softdepend: [PlaceholderAPI]
 commands:
   sc:
-    description: Send a message to staff chat.
+    description: Send a message in staff chat.
   sct:
-    description: Enable or disable staff chat mode.
+    description: Toggle on or off chat mode in staff chat.
   screload:
     description: Reload config.
 permissions:

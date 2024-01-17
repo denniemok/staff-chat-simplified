@@ -40,11 +40,11 @@ public class Util {
 
     }
 
-    public static void msgStaff(String msg) {
+    public static void msgStaff(String message) {
         for (String staffName : staffList) {
             Player staff = Bukkit.getPlayer(staffName);
             if (staff != null) {
-                msgPlayer(staff, msg);
+                msgPlayer(staff, message);
             } else {
                 Util.staffList.remove(staffName);
                 Util.chatEnabledList.remove(staffName);

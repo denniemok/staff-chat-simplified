@@ -1,7 +1,9 @@
 package com.battleasya.staffchat.command;
 
+import com.battleasya.staffchat.StaffChat;
 import com.battleasya.staffchat.handler.Config;
 import com.battleasya.staffchat.handler.Util;
+import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -33,9 +35,18 @@ public class Msg implements CommandExecutor {
             str.append(arg).append(" ");
         }
 
-        Util.msgStaff(Config.chatMessage
+        String msg;
+
+        if (StaffChat.getPAPIStatus()) {
+            msg = PlaceholderAPI.setPlaceholders(((Player) sender).getPlayer(), Config.chatMessage);
+        } else {
+            msg = Config.chatMessage;
+        }
+
+        Util.msgStaff(msg
                 .replaceAll("%name%", sender.getName())
                 .replaceAll("%message%", str.toString()));
+
         return true;
 
     }

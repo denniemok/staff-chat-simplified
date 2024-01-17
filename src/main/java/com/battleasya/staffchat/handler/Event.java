@@ -1,5 +1,7 @@
 package com.battleasya.staffchat.handler;
 
+import com.battleasya.staffchat.StaffChat;
+import me.clip.placeholderapi.PlaceholderAPI;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -13,11 +15,22 @@ public class Event implements Listener {
         String playerName = event.getPlayer().getName();
 
         if (Util.chatEnabledList.contains(playerName)) {
+
             String message = event.getMessage();
             event.setCancelled(true);
-            Util.msgStaff(Config.chatMessage
+
+            String msg;
+
+            if (StaffChat.getPAPIStatus()) {
+                msg = PlaceholderAPI.setPlaceholders(event.getPlayer(), Config.chatMessage);
+            } else {
+                msg = Config.chatMessage;
+            }
+
+            Util.msgStaff(msg
                     .replaceAll("%name%", playerName)
                     .replaceAll("%message%",  message));
+
         }
 
     }

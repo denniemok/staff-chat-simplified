@@ -28,8 +28,8 @@ public class Event implements Listener {
             }
 
             Util.msgStaff(msg
-                    .replaceAll("%name%", playerName)
-                    .replaceAll("%message%",  message));
+                    .replace("%name%", playerName)
+                    .replace("%message%",  message));
 
         }
 

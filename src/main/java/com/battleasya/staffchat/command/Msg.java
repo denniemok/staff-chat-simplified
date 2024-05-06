@@ -44,8 +44,8 @@ public class Msg implements CommandExecutor {
         }
 
         Util.msgStaff(msg
-                .replaceAll("%name%", sender.getName())
-                .replaceAll("%message%", str.toString()));
+                .replace("%name%", sender.getName())
+                .replace("%message%", str.toString()));
 
         return true;
 
